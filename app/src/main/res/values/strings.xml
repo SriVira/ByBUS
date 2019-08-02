@@ -114,4 +114,56 @@
     <string name="RegRadioPassenger">Passenger</string>
     <string name="RegRadioDriver">Driver</string>
     <string name="LogLink">Sign Up</string>
+
+
+
+
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="inputFrom" />
+    <string name="inputTo" />
+    <string name="inputDate" />
+    <string name="inputTime" />
+    <string name="search">Search</string>
+    <string name="busList">Bus List</string>
+    <string name="btnSelect">Select</string>
+    <string name="welcome">Welcome Dileesha....!</string>
+    <string name="busNumber">Bus Number</string>
+    <string name="driverName">Driver Name</string>
+    <string name="contactNo">Contact Number</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="departureTime">Departure Time</string>
+    <string name="arrivalTime">Arrival Time</string>
+    <string name="bookedSeats">Already Booked Seats</string>
+    <string name="availableSeats">Available Seats</string>
+    <string name="enterSeat">Enter Seat Number</string>
+    <string name="bookNow">Book Now</string>
+    <string name="selectPaymentMethod">Select Your Payment Method</string>
+    <string name="creditCard">Credit Card</string>
+    <string name="cash">Cash</string>
+    <string name="ezCash">Ez Cash</string>
+    <string name="done">Done</string>
+    <string name="crdPayDescription">VISA,Master cards are accepted</string>
+    <string name="cashDescription">Pay on go</string>
+    <string name="ezCashDescription">Inform us after the payment.......Ez Cash Number-076 7871932</string>
+    <string name="crdHolder">Card Holder Name</string>
+    <string name="crdNo">Card Number</string>
+    <string name="cvc">CVC</string>
+    <string name="expDate">Expire Date</string>
+    <string name="crdHolderName" />
+    <string name="inputCrdNo" />
+    <string name="inputCVC" />
+    <string name="crdExpDate" />
+    <string name="payNow">Pay Now</string>
+    <string name="updateBtn">Update</string>
+    <string name="deleteBtn">Delete</string>
+    <string name="seatNo" />
+    <string name="mybookings">My Bookings</string>
+    <string name="myprofile">My Profile</string>
+    <string name="rating">Rate Us</string>
+    <string name="rateImgBtn" />
+    <string name="profileImgBtn" />
+    <string name="bookImgBtn" />
+    <string name="myBookingsImgBtn" />
 </resources>
