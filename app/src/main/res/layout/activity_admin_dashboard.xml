@@ -17,7 +17,9 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintVertical_bias="1.0"
+        android:scrollbars=""
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -62,7 +64,14 @@
 
                 android:layout_marginBottom="@dimen/fab_margin"
                 android:background="@color/BtnColor"
+
+                android:drawableLeft="@mipmap/admin_bookings_icon"
+                android:drawablePadding="20dp"
+                android:onClick="admin_click_bookings"
+                android:paddingLeft="50dp"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
                 android:text="Bookings"
+                android:textAlignment="textStart"
                 android:textColor="@android:color/background_light"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -73,7 +82,13 @@
                 android:layout_height="100dp"
                 android:layout_marginBottom="@dimen/fab_margin"
                 android:background="@color/BtnColor"
+
+                android:drawableLeft="@mipmap/admin_passengers_icons"
+                android:drawablePadding="20dp"
+                android:onClick="admin_click_passengers"
+                android:paddingLeft="50dp"
                 android:text="Passengers"
+                android:textAlignment="textStart"
                 android:textColor="@android:color/background_light"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -84,7 +99,14 @@
                 android:layout_height="100dp"
                 android:layout_marginBottom="@dimen/fab_margin"
                 android:background="@color/BtnColor"
+
+
+                android:drawableLeft="@mipmap/admin_drivers_icon"
+                android:drawablePadding="20dp"
+                android:onClick="admin_click_drivers"
+                android:paddingLeft="50dp"
                 android:text="Drivers"
+                android:textAlignment="textStart"
                 android:textColor="@android:color/background_light"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -95,7 +117,12 @@
                 android:layout_height="100dp"
                 android:layout_marginBottom="@dimen/fab_margin"
                 android:background="@color/BtnColor"
+                android:drawableLeft="@mipmap/admin_routes_icon"
+                android:drawablePadding="20dp"
+                android:onClick="admin_click_routes"
+                android:paddingLeft="50dp"
                 android:text="Routes"
+                android:textAlignment="textStart"
                 android:textColor="@android:color/background_light"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -106,7 +133,12 @@
                 android:layout_height="100dp"
                 android:layout_marginBottom="@dimen/fab_margin"
                 android:background="@color/BtnColor"
+                android:drawableLeft="@mipmap/admin_payments_icon"
+                android:drawablePadding="20dp"
+                android:onClick="admin_click_payments"
+                android:paddingLeft="50dp"
                 android:text="Payments"
+                android:textAlignment="textStart"
                 android:textColor="@android:color/background_light"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -117,14 +149,18 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/adminprofilebtnid"
+                    android:id="@+id/adminsettingsbtnid"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="@dimen/fab_margin"
                     android:layout_weight="1"
+
                     android:background="@color/BtnColor"
-                    android:text="Profile"
+                    android:drawableTop="@mipmap/admin_settings"
+                    android:onClick="admin_click_settings"
+                    android:paddingTop="10dp"
+                    android:text="Settings"
                     android:textColor="@android:color/background_light"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -137,6 +173,9 @@
                     android:layout_marginBottom="@dimen/fab_margin"
                     android:layout_weight="1"
                     android:background="@color/BtnColor"
+                    android:drawableTop="@mipmap/admin_logout"
+                    android:onClick="admin_click_logout"
+                    android:paddingTop="10dp"
                     android:text="Logout"
                     android:textColor="@android:color/background_light"
                     android:textSize="18sp"

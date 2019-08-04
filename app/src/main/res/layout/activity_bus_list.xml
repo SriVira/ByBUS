@@ -8,8 +8,8 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="148dp"
-        android:layout_height="63dp"
+        android:layout_width="106dp"
+        android:layout_height="45dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -21,32 +21,9 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.942"
+        app:layout_constraintHorizontal_bias="0.927"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.222" />
-
-    <FrameLayout
-        android:layout_width="377dp"
-        android:layout_height="104dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.444"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.013">
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="211dp"
-            android:layout_height="64dp"
-            android:text="@string/busList"
-            android:textColor="@color/BlackColour"
-            android:textSize="30sp" />
-    </FrameLayout>
+        app:layout_constraintVertical_bias="0.138" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

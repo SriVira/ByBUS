@@ -21,14 +21,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.997" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="96dp"
-        android:layout_marginTop="148dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="508dp"
         android:background="#8C278B"
         android:onClick="Update"
         android:text="Update"
@@ -47,7 +48,7 @@
         android:textColor="#FAFFFFFF"
         app:layout_constraintBaseline_toBaselineOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toEndOf="@+id/button2" />
 
     <TextView
@@ -58,9 +59,12 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:text="My Added Routes"
+        android:textColor="@color/BlackColour"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/editText6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024" />
 </androidx.constraintlayout.widget.ConstraintLayout>

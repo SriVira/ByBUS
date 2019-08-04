@@ -2,27 +2,107 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.bussapp">
 
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+        <!-- Login,Reset,Reg Activities -->
+        <activity android:name=".user_login" android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".user_password_reset"
+            android:parentActivityName=".user_login" />
+        <activity android:name=".user_register" /> <!-- Passenger Activities -->
+        <activity android:name=".Passenger" />
+        <activity android:name=".MyBookings" />
+        <activity android:name=".passenger_profile" />
+        <activity android:name=".Ratings" />
+        <activity
+            android:name=".BookBus"
+            android:label="@string/search" />
+        <activity
+            android:name=".BusList"
+            android:label="@string/busList" />
+        <activity
+            android:name=".SelectSeat"
+            android:label="@string/seatNo" />
+        <activity
+            android:name=".PayNow"
+            android:label="@string/payforticket" />
+        <activity
+            android:name=".CreditCardPay"
+            android:label="@string/crecardDetails" /> <!-- Admin Activities -->
+        <activity
+            android:name=".admin_pasengers"
+            android:label="@string/admin_passengers_title"
+            android:parentActivityName=".admin_dashboard"/>
+        <activity
+            android:name=".admin_bookings"
+            android:label="@string/admin_booking_title"
+            android:parentActivityName=".admin_dashboard" />
+        <activity
+            android:name=".admin_dashboard"
+            android:label="Admin Panel" />
+        <activity
+            android:name=".admin_drivers"
+            android:label="@string/admin_drivers_title"
+            android:parentActivityName=".admin_dashboard"
 
-        <activity android:name=".admin_dashboard"
-            android:label="Admin Panel"
-            ></activity>
+            />
+        <activity
+            android:name=".admin_routes"
+            android:label="@string/admin_routes_title"
+            android:parentActivityName=".admin_dashboard" />
+        <activity
+            android:name=".admin_payments"
+            android:label="@string/admin_payments_title"
+            android:parentActivityName=".admin_dashboard" />
+        <activity android:name=".admin_settings"
+                  android:label="@string/admin_settings_title"
+                  android:parentActivityName=".admin_dashboard"
 
+            >
+        </activity>
 
-        <activity android:name=".welcome_spalsh" android:theme="@style/AppTheme.NoActionBar">
+        <!-- Driver Activities -->
+        <activity
+            android:name=".driver_dashboard"
+            android:label="@string/driver_dashboard_title"
+            android:parentActivityName="" />
+        <activity
+            android:name=".Add_route"
+            android:label="@string/driver_add_route"
+            android:parentActivityName=".driver_dashboard" />
+        <activity
+            android:name=".booking"
+            android:label="@string/driver_passengers_bookings"
+            android:parentActivityName=".driver_dashboard" />
+        <activity
+            android:name=".Payments"
+            android:label="@string/driver_paument_details"
+            android:parentActivityName=".driver_dashboard" />
+        <activity
+            android:name=".My_route"
+            android:label="@string/driver_myroutes"
+            android:parentActivityName=".driver_dashboard" />
+        <activity
+            android:name=".Update"
+            android:label="@string/driver_update_route"
+            android:parentActivityName=".My_route" /> <!-- Wecome Login Screen -->
+        <activity
+            android:name=".welcome_spalsh"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-
-
             </intent-filter>
         </activity>
     </application>

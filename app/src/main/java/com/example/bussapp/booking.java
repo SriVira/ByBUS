@@ -15,8 +15,8 @@ public class booking extends AppCompatActivity {
     }
 
     public void Back2home(View v) {
-        Intent i = new Intent(booking.this, driver_dashboard.class);
-        startActivity(i);
+        Intent Back2home = new Intent(booking.this, driver_dashboard.class);
+        startActivity(Back2home);
 
 
     }

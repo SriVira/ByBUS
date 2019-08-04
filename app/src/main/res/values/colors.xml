@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#8B008B</color>
-    <color name="colorPrimaryDark">#020202</color>
+    <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#FFFFFF</color>
     <color name="BtnColor">#8B008B</color>
     <color name="TextBoxColor">#F8E4FC</color>
     <color name="LinkColor">#0A7BC1</color>
 
 
-    <color name="BlackColour">#020202</color>
+    <color name="BlackColour">#C61010</color>
     <color name="Ash">#E3D5D5</color>
     <color name="Red">#E50808</color>
     <color name="white">#FFFFFF</color>

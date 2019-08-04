@@ -144,6 +144,7 @@
         android:background="@color/colorPrimary"
         android:onClick="Searchbtnclick"
         android:text="@string/search"
+        android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"

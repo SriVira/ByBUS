@@ -14,21 +14,28 @@ public class Passenger extends AppCompatActivity {
         setContentView(R.layout.activity_passenger);
     }
 
+    public void onBackPressed(){
+
+        this.onPause();
+    }
+
+
     public void BookingImgBtnClick(View v){
-        Intent intent1 = new Intent(Passenger.this,BookBus.class);
-        startActivity(intent1);
+        Intent BookingImgBtnClick = new Intent(Passenger.this,BookBus.class);
+        startActivity(BookingImgBtnClick);
     }
     public void MyBookingsImgBtnClick(View v){
-        Intent intent2 = new Intent(Passenger.this,MyBookings.class);
-        startActivity(intent2);
+        Intent MyBookingsImgBtnClick = new Intent(Passenger.this,MyBookings.class);
+        startActivity(MyBookingsImgBtnClick);
     }
 
     public void MyProfileImgBtnClick(View v){
-        Intent intent4 = new Intent(Passenger.this,MyProfile.class);
-        startActivity(intent4);
+        Intent MyProfileImgBtnClick = new Intent(Passenger.this,passenger_profile.class);
+        startActivity(MyProfileImgBtnClick);
     }
     public void RatingImgBtnClick(View v){
-        Intent intent5 = new Intent(Passenger.this,Ratings.class);
-        startActivity(intent5);
+        Intent RatingImgBtnClick = new Intent(Passenger.this,Ratings.class);
+        startActivity(RatingImgBtnClick);
     }
+
 }

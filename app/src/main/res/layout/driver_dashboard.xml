@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/payments"
-        android:layout_width="146dp"
-        android:layout_height="146dp"
+        android:layout_width="142dp"
+        android:layout_height="132dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -89,12 +89,12 @@
         android:layout_height="26dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="112dp"
+        android:layout_marginBottom="116dp"
         android:text="@string/payments"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.777"
+        app:layout_constraintHorizontal_bias="0.83"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -102,10 +102,9 @@
         android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_marginEnd="76dp"
-        android:layout_marginBottom="52dp"
         android:text="@string/booking"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/payments"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView10"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView

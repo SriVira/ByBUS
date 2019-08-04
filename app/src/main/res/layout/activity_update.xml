@@ -23,8 +23,8 @@
             android:layout_width="142dp"
             android:layout_height="53dp"
             android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
-            android:layout_marginBottom="48dp"
             android:background="#8C278B"
             android:text="Update"
             android:textColor="#C3E9F8"
@@ -32,8 +32,10 @@
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.624"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.084" />
 
         <TextView
             android:id="@+id/textView"
@@ -172,20 +174,21 @@
 
         <TextView
             android:id="@+id/textView6"
-            android:layout_width="174dp"
-            android:layout_height="62dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="50dp"
             android:text="Update Route "
+            android:textAlignment="center"
             android:textColor="#1B0B63"
             android:textColorLink="#00CE1B1B"
             android:textSize="28sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/editText5"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.615"
+            app:layout_constraintHorizontal_bias="0.511"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0" />

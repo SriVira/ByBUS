@@ -13,12 +13,13 @@ public class Add_route extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_route);
     }
-
+/*
     public void Back2home(View v) {
         Intent i = new Intent(Add_route.this, driver_dashboard.class);
         startActivity(i);
 
 
     }
+    */
 
 }

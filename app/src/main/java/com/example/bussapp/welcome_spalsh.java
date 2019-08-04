@@ -19,7 +19,7 @@ public class welcome_spalsh extends AppCompatActivity {
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    Intent AdminPage = new Intent(welcome_spalsh.this,admin_dashboard.class);
+                    Intent AdminPage = new Intent(welcome_spalsh.this,user_login.class);
                     startActivity(AdminPage);
                     finish();
                 }

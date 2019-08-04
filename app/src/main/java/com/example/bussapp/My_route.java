@@ -15,7 +15,7 @@ public class My_route extends AppCompatActivity {
     }
 
     public void Update(View V) {
-        Intent i = new Intent(My_route.this, Update.class);
-        startActivity(i);
+        Intent Update = new Intent(My_route.this, Update.class);
+        startActivity(Update);
     }
 }
