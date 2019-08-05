@@ -5,6 +5,9 @@
 
 
     <!--Login,Reset,Reg-->
+    <string name="user_login_title">Login</string>
+    <string name="user_passreset_title">Forgot Password</string>
+    <string name="userr_register_title">Register</string>
     <!-- Activity Titles -->
 
 
@@ -115,6 +118,11 @@
     <string name="admin_routes_title">Routes</string>
     <string name="admin_payments_title">Payments</string>
     <string name="admin_settings_title">Settings</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="passenger_dash">Passenger Dashboard</string>
+    <string name="passenger_bookings">Passenger Dashboard</string>
+    <string name="passenger_prof">My Profile</string>
+    <string name="user_register_title">Register</string>
 
 
 </resources>
