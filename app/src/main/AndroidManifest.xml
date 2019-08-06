@@ -38,12 +38,14 @@
             android:label="@string/passenger_dash"
             />
         <activity
-            android:label="@string/myprofile"
+            android:label="@string/mybookingsde"
             android:name=".MyBookings"
+            android:parentActivityName=".Passenger" />
             />
         <activity
             android:label="@string/passenger_prof"
             android:name=".passenger_profile"
+            android:parentActivityName=".Passenger" />
             />
 
         <activity

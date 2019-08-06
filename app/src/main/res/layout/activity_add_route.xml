@@ -2,6 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView2"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -11,9 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
+        android:background="@color/colorAccent"
         tools:context=".Add_route">
-
-
 
 
         <Button
@@ -26,7 +26,7 @@
             android:layout_marginBottom="48dp"
             android:background="#8C278B"
             android:text="ADD"
-            android:textColor="#C3E9F8"
+            android:textColor="@color/colorAccent"
             android:textColorHint="#00FFFFFF"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -135,15 +135,18 @@
             android:layout_width="265dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
             android:background="#F8E4FC"
             android:ems="10"
             android:inputType="textPersonName"
             android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/editText4"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/textview"
-            tools:layout_editor_absoluteY="180dp" />
+            app:layout_constraintTop_toBottomOf="@+id/editText5" />
 
         <EditText
             android:id="@+id/editText5"
@@ -165,15 +168,19 @@
             android:layout_width="265dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
             android:background="#F8E4FC"
             android:ems="10"
             android:inputType="textPersonName"
             android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/editText"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/textView2"
-            tools:layout_editor_absoluteY="262dp" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.878" />
 
         <TextView
             android:id="@+id/textView6"

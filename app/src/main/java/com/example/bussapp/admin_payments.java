@@ -52,7 +52,7 @@ public class admin_payments extends AppCompatActivity {
                 // set item width
                 openItem.setWidth(200);
                 // set item title
-                openItem.setTitle("Update");
+                openItem.setTitle("Confirm");
                 // set item title fontsize
                 openItem.setTitleSize(18);
 

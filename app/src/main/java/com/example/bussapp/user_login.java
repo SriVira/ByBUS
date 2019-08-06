@@ -52,8 +52,7 @@ public class user_login extends AppCompatActivity {
 
             Intent admin = new Intent(user_login.this, admin_dashboard.class);
             startActivity(admin);
-            Toast.makeText(this,"Login Successfuly As Admin",Toast.LENGTH_SHORT).show();
-            finish();
+            Toast.makeText(this,"Login Successfully As Admin",Toast.LENGTH_SHORT).show();
 
         }
 
@@ -61,26 +60,24 @@ public class user_login extends AppCompatActivity {
 
             Intent passenger = new Intent(user_login.this, Passenger.class);
             startActivity(passenger);
-            Toast.makeText(this,"Login Successfuly As Passenger",Toast.LENGTH_SHORT).show();
-            finish();
+            Toast.makeText(this,"Login Successfully As Passenger",Toast.LENGTH_SHORT).show();
         }
 
         else if(Uname.equals("driver") && Upass.equals("driver")){
 
             Intent driver = new Intent(user_login.this,driver_dashboard.class);
             startActivity(driver);
-            Toast.makeText(this,"Login Successfuly As Driver",Toast.LENGTH_SHORT).show();
-            finish();
+            Toast.makeText(this,"Login Successfully As Driver",Toast.LENGTH_SHORT).show();
 
         }else{
 
             AlertDialog.Builder WronngUserPass = new AlertDialog.Builder(user_login.this);
             WronngUserPass.setCancelable(true);
             WronngUserPass.setTitle("Login");
-            WronngUserPass.setMessage("Wrong Username Or Password. Please Try Again");
+            WronngUserPass.setMessage("Incorrect Username Or Password. Please Try Again");
 
 
-            WronngUserPass.setPositiveButton("Tryagain", new DialogInterface.OnClickListener(){
+            WronngUserPass.setPositiveButton("Try again", new DialogInterface.OnClickListener(){
 
                 @Override
                 public void onClick(DialogInterface dialog, int i) {

@@ -123,6 +123,7 @@
     <string name="passenger_bookings">Passenger Dashboard</string>
     <string name="passenger_prof">My Profile</string>
     <string name="user_register_title">Register</string>
+    <string name="mybookingsde">My Bookings</string>
 
 
 </resources>

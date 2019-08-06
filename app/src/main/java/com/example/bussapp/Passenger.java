@@ -14,10 +14,10 @@ public class Passenger extends AppCompatActivity {
         setContentView(R.layout.activity_passenger);
     }
 
-    public void onBackPressed(){
+    //public void onBackPressed(){
 
-        this.onPause();
-    }
+        //this.onPause();
+   // }
 
 
     public void BookingImgBtnClick(View v){

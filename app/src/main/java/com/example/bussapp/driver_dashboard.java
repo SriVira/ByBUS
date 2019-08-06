@@ -17,10 +17,10 @@ public class driver_dashboard extends AppCompatActivity {
 
 
     }
-    public void onBackPressed(){
+    //public void onBackPressed(){
 
-        this.onPause();
-    }
+     //   this.onPause();
+   // }
 
     public void add_route(View v) {
         Intent add_route = new Intent(driver_dashboard.this,Add_route.class);

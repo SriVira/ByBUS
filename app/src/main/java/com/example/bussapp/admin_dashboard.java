@@ -26,11 +26,11 @@ public class admin_dashboard extends AppCompatActivity {
 
 
     }
-    @Override
-    public void onBackPressed(){
+   // @Override
+  //  public void onBackPressed(){
 
-        this.onPause();
-    }
+    //    this.onPause();
+   // }
 
     public  void admin_click_bookings(View V){
 
