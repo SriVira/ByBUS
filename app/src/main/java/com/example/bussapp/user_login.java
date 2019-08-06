@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -51,13 +52,16 @@ public class user_login extends AppCompatActivity {
 
             Intent admin = new Intent(user_login.this, admin_dashboard.class);
             startActivity(admin);
+            Toast.makeText(this,"Login Successfuly As Admin",Toast.LENGTH_SHORT).show();
             finish();
+
         }
 
         else if(Uname.equals("passenger") && Upass.equals("passenger")){
 
             Intent passenger = new Intent(user_login.this, Passenger.class);
             startActivity(passenger);
+            Toast.makeText(this,"Login Successfuly As Passenger",Toast.LENGTH_SHORT).show();
             finish();
         }
 
@@ -65,6 +69,7 @@ public class user_login extends AppCompatActivity {
 
             Intent driver = new Intent(user_login.this,driver_dashboard.class);
             startActivity(driver);
+            Toast.makeText(this,"Login Successfuly As Driver",Toast.LENGTH_SHORT).show();
             finish();
 
         }else{

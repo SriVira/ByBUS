@@ -109,7 +109,7 @@
     <string name="my_routes">My Routes</string>
     <string name="add_route">Add Route</string>
     <string name="payments">Payments</string>
-    <string name="booking">Booking</string>
+    <string name="booking">Bookings</string>
     <string name="title_activity_admin_booking_details">admin_booking_details</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>

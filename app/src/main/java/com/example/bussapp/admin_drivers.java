@@ -25,21 +25,20 @@ public class admin_drivers extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_drivers);
 
-        AdminBookingList();
+        AdminDriversList();
 
     }
 
-    public void AdminBookingList(){
+    public void AdminDriversList(){
+        SwipeMenuListView driverslistview = (SwipeMenuListView) findViewById(R.id.driverslist);
+        ArrayList<String> list = new ArrayList<>();
 
-        SwipeMenuListView  driversistview = (SwipeMenuListView) findViewById(R.id.driverslist);
-        ArrayList<String> booklist = new ArrayList<>();
+        list.add("Driver_1");
+        list.add("Driver_2");
+        list.add("Driver_3");
 
-        booklist.add("Passenger_1");
-        booklist.add("Passenger_2");
-        booklist.add("Passenger_2");
-
-        ArrayAdapter booklistArad =  new ArrayAdapter(admin_drivers.this,android.R.layout.simple_list_item_2,booklist);
-        driversistview.setAdapter(booklistArad);
+        ArrayAdapter booklistArad =  new ArrayAdapter(admin_drivers.this,android.R.layout.simple_list_item_1,list);
+        driverslistview.setAdapter(booklistArad);
 
         SwipeMenuCreator creator = new SwipeMenuCreator() {
 
@@ -77,9 +76,9 @@ public class admin_drivers extends AppCompatActivity {
             }
         };
 
-        driversistview.setMenuCreator(creator);
+        driverslistview.setMenuCreator(creator);
 
-        driversistview.setOnMenuItemClickListener(new SwipeMenuListView.OnMenuItemClickListener() {
+        driverslistview.setOnMenuItemClickListener(new SwipeMenuListView.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(int position, SwipeMenu menu, int index) {
                 switch (index) {
@@ -98,7 +97,6 @@ public class admin_drivers extends AppCompatActivity {
 
 
     }
-
 
 
 

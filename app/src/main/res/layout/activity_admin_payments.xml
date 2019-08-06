@@ -6,4 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".admin_payments">
 
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:id="@+id/paymentlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.baoyz.swipemenulistview.SwipeMenuListView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
