@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -14,7 +15,7 @@
         <TextView
             android:id="@+id/textView17"
             android:layout_width="141dp"
-            android:layout_height="33dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginTop="40dp"
             android:text="@string/enterSeat"
@@ -31,7 +32,6 @@
             android:background="@color/TextBoxColor"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="@string/seatNo"
             app:layout_constraintBaseline_toBaselineOf="@+id/textView17"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.464"
@@ -88,7 +88,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginEnd="36dp"
             android:text="@string/availableSeats"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@color/green"
             app:layout_constraintBaseline_toBaselineOf="@+id/textView14"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.525"
@@ -153,9 +153,10 @@
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.466"
+            app:layout_constraintHorizontal_bias="0.493"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView17" />
+            app:layout_constraintTop_toBottomOf="@+id/textView17"
+            app:layout_constraintVertical_bias="0.0" />
 
         <EditText
             android:id="@+id/editText10"
@@ -186,16 +187,18 @@
         <EditText
             android:id="@+id/editText16"
             android:layout_width="92dp"
-            android:layout_height="25dp"
+            android:layout_height="31dp"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
             android:background="@color/TextBoxColor"
             android:ems="10"
             android:inputType="textPersonName"
-            app:layout_constraintBaseline_toBaselineOf="@+id/editText19"
+            app:layout_constraintBottom_toTopOf="@+id/editText5"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.602"
-            app:layout_constraintStart_toEndOf="@+id/editText19" />
+            app:layout_constraintHorizontal_bias="0.638"
+            app:layout_constraintStart_toEndOf="@+id/editText19"
+            app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
         <EditText
             android:id="@+id/editText19"

@@ -8,10 +8,11 @@
     <color name="LinkColor">#0A7BC1</color>
 
 
-    <color name="BlackColour">#C61010</color>
+    <color name="BlackColour">#000000</color>
     <color name="Ash">#E3D5D5</color>
     <color name="Red">#E50808</color>
     <color name="white">#FFFFFF</color>
+    <color name="green">#157108</color>
 
 
 </resources>

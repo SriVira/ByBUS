@@ -10,7 +10,7 @@
 
     <application
         android:allowBackup="true"
-
+        android:icon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
@@ -31,13 +31,14 @@
             android:theme="@style/AppTheme.NoActionBar"
             android:name=".user_register"
             android:screenOrientation="portrait"
-            /> <!-- Passenger Activities -->
+            />
+        <!-- Passenger Activities -->
         <activity
             android:name=".Passenger"
             android:label="@string/passenger_dash"
             />
         <activity
-            android:label="@string/passenger_bookings"
+            android:label="@string/myprofile"
             android:name=".MyBookings"
             />
         <activity
@@ -74,7 +75,8 @@
             android:parentActivityName=".PayNow"
             android:screenOrientation="portrait"
             android:name=".CreditCardPay"
-            android:label="@string/crecardDetails" /> <!-- Admin Activities -->
+            android:label="@string/crecardDetails" />
+        <!-- Admin Activities -->
         <activity
             android:name=".admin_pasengers"
             android:label="@string/admin_passengers_title"
@@ -111,7 +113,9 @@
         <activity
             android:name=".driver_dashboard"
             android:label="@string/driver_dashboard_title"
-            android:parentActivityName="" />
+            android:parentActivityName=""
+
+            />
         <activity
             android:name=".Add_route"
             android:label="@string/driver_add_route"

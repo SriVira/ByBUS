@@ -3,8 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
     android:layout_height="match_parent"
     tools:context=".driver_dashboard">
+
+
 
     <ImageView
         android:id="@+id/payments"
@@ -77,6 +80,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="112dp"
         android:text="@string/my_routes"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -91,6 +95,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="116dp"
         android:text="@string/payments"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -103,6 +108,7 @@
         android:layout_height="30dp"
         android:layout_marginEnd="76dp"
         android:text="@string/booking"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="20sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView10"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -115,6 +121,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:text="@string/add_route"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/my_route"
         app:layout_constraintEnd_toStartOf="@+id/textView11"
