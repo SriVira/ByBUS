@@ -41,12 +41,13 @@
             android:label="@string/mybookingsde"
             android:name=".MyBookings"
             android:parentActivityName=".Passenger" />
-            />
+
+
         <activity
             android:label="@string/passenger_prof"
             android:name=".passenger_profile"
             android:parentActivityName=".Passenger" />
-            />
+
 
         <activity
             android:name=".Ratings"
@@ -100,15 +101,15 @@
             android:name=".admin_routes"
             android:label="@string/admin_routes_title"
             android:parentActivityName=".admin_dashboard" />
+
         <activity
             android:name=".admin_payments"
             android:label="@string/admin_payments_title"
             android:parentActivityName=".admin_dashboard" />
+
         <activity android:name=".admin_settings"
                   android:label="@string/admin_settings_title"
-                  android:parentActivityName=".admin_dashboard"
-
-            >
+                  android:parentActivityName=".admin_dashboard">
         </activity>
 
         <!-- Driver Activities -->

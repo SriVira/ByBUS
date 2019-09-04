@@ -8,29 +8,6 @@
     <string name="user_login_title">Login</string>
     <string name="user_passreset_title">Forgot Password</string>
     <string name="userr_register_title">Register</string>
-    <!-- Activity Titles -->
-
-
-    <!--Admin-->
-    <!-- Activity Titles -->
-    <string name="admin_booking_title">Bookings</string>
-    <string name="admin_passengers_title">Passengers</string>
-
-    <!--Driver-->
-    <!-- Activity Titles -->
-
-    <string name="driver_dashboard_title">Driver Dashboard</string>
-    <string name="driver_add_route">Add Route</string>
-    <string name="driver_passengers_bookings">Bookings</string>
-    <string name="driver_myroutes">My Added Routes</string>
-    <string name="driver_paument_details">Payments</string>
-    <string name="driver_update_route">Update A Route</string>
-
-    <!--Passenger-->
-    <!-- Activity Titles -->
-    <string name="crecardDetails">Enter Credit Card Details</string>
-    <string name="payforticket">Pay For Ticket</string>
-    <string name="action_settings">Settings</string>
     <string name="RegName">Name :</string>
     <string name="RegType">Type :</string>
     <string name="RegContact">Contact No :</string>
@@ -41,12 +18,7 @@
     <string name="LogPassword">Password :</string>
     <string name="LogBtn">Login</string>
     <string name="RegBtn">Register</string>
-
-    <string name="RegLink">Already registered</string>
-    <string name="ProfName">Name :</string>
-    <string name="ProfType">Type :</string>
-    <string name="ProfContact">Contact No :</string>
-    <string name="ProfEmail">Email :</string>
+    <string name="user_register_title">Register</string>
     <string name="LogForgotPassword">Forgot Your Password?</string>
     <string name="ForgotContact">Contact No :</string>
     <string name="ForgotNewPassword">New Password :</string>
@@ -54,7 +26,55 @@
     <string name="RegRadioPassenger">Passenger</string>
     <string name="RegRadioDriver">Driver</string>
     <string name="LogLink">Sign Up</string>
+    <!-- Activity Titles -->
 
+
+    <!--Admin-->
+    <!-- Activity Titles -->
+    <string name="admin_booking_title">Bookings</string>
+    <string name="admin_passengers_title">Passengers</string>
+    <string name="admin_drivers_title">Drivers</string>
+    <string name="admin_routes_title">Routes</string>
+    <string name="admin_payments_title">Payments</string>
+    <string name="admin_settings_title">Settings</string>
+    <string name="title_activity_admin_booking_details">admin_booking_details</string>
+    <!--Driver-->
+    <!-- Activity Titles -->
+
+    <string name="driver_dashboard_title">Driver Dashboard</string>
+    <string name="driver_add_route">Add Route</string>
+    <string name="driver_passengers_bookings">Bookings</string>
+    <string name="driver_myroutes">My Added Routes</string>
+    <string name="driver_paument_details">Payments</string>
+    <string name="driver_update_route">Update A Route</string>
+    <string name="my_routes">My Routes</string>
+    <string name="add_route">Add Route</string>
+    <string name="payments">Payments</string>
+    <string name="booking">Bookings</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="rate_us">Rate Us</string>
+    <string name="passenger_dash">Passenger Dashboard</string>
+    <string name="passenger_bookings">Passenger Dashboard</string>
+    <string name="passenger_prof">My Profile</string>
+
+    <string name="mybookingsde">My Bookings</string>
+
+    <!--Passenger-->
+    <!-- Activity Titles -->
+    <string name="crecardDetails">Enter Credit Card Details</string>
+    <string name="payforticket">Pay For Ticket</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="RegLink">Already registered</string>
+    <string name="ProfName">Name :</string>
+    <string name="ProfType">Type :</string>
+    <string name="ProfContact">Contact No :</string>
+    <string name="ProfEmail">Email :</string>
 
     <string name="date">Date</string>
     <string name="time">Time</string>
@@ -106,24 +126,9 @@
     <string name="myBookingsImgBtn" />
 
 
-    <string name="my_routes">My Routes</string>
-    <string name="add_route">Add Route</string>
-    <string name="payments">Payments</string>
-    <string name="booking">Bookings</string>
-    <string name="title_activity_admin_booking_details">admin_booking_details</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
-    <string name="admin_drivers_title">Drivers</string>
-    <string name="admin_routes_title">Routes</string>
-    <string name="admin_payments_title">Payments</string>
-    <string name="admin_settings_title">Settings</string>
-    <string name="rate_us">Rate Us</string>
-    <string name="passenger_dash">Passenger Dashboard</string>
-    <string name="passenger_bookings">Passenger Dashboard</string>
-    <string name="passenger_prof">My Profile</string>
-    <string name="user_register_title">Register</string>
-    <string name="mybookingsde">My Bookings</string>
+
+
+
 
 
 </resources>
