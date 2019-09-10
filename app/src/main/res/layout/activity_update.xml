@@ -98,7 +98,7 @@
             tools:text="To" />
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/admin_etime"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_marginStart="8dp"
@@ -113,7 +113,7 @@
             app:layout_constraintStart_toEndOf="@+id/textView3" />
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/admin_rnumber"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_marginStart="8dp"
@@ -129,7 +129,7 @@
             app:layout_constraintStart_toEndOf="@+id/textView" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/admin_to"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_marginStart="8dp"
@@ -144,7 +144,7 @@
             app:layout_constraintStart_toEndOf="@+id/textview" />
 
         <EditText
-            android:id="@+id/editText5"
+            android:id="@+id/admin_from"
             android:layout_width="0dp"
             android:layout_height="41dp"
             android:layout_marginStart="8dp"
@@ -159,7 +159,7 @@
             app:layout_constraintStart_toEndOf="@+id/textView4" />
 
         <EditText
-            android:id="@+id/editText4"
+            android:id="@+id/admin_stime"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_marginStart="8dp"
@@ -174,7 +174,7 @@
             app:layout_constraintStart_toEndOf="@+id/textView2" />
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/adminaddroutetxt"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -187,7 +187,7 @@
             android:textColorLink="#00CE1B1B"
             android:textSize="28sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/editText5"
+            app:layout_constraintBottom_toTopOf="@+id/admin_from"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.511"
             app:layout_constraintStart_toStartOf="parent"

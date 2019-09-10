@@ -38,6 +38,7 @@
     <string name="admin_payments_title">Payments</string>
     <string name="admin_settings_title">Settings</string>
     <string name="title_activity_admin_booking_details">admin_booking_details</string>
+    <string name="admin_add_route">Admin Add Route</string>
     <!--Driver-->
     <!-- Activity Titles -->
 
@@ -124,11 +125,6 @@
     <string name="profileImgBtn" />
     <string name="bookImgBtn" />
     <string name="myBookingsImgBtn" />
-
-
-
-
-
 
 
 </resources>

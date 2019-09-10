@@ -100,7 +100,7 @@
             tools:text="To" />
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/admin_etime"
             android:layout_width="265dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -115,7 +115,7 @@
             app:layout_constraintStart_toEndOf="@+id/textView3" />
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/admin_rnumber"
             android:layout_width="265dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -131,7 +131,7 @@
             app:layout_constraintStart_toEndOf="@+id/textView" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/admin_to"
             android:layout_width="265dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -142,14 +142,14 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:textSize="24sp"
-            app:layout_constraintBottom_toTopOf="@+id/editText4"
+            app:layout_constraintBottom_toTopOf="@+id/admin_stime"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/textview"
-            app:layout_constraintTop_toBottomOf="@+id/editText5" />
+            app:layout_constraintTop_toBottomOf="@+id/admin_from" />
 
         <EditText
-            android:id="@+id/editText5"
+            android:id="@+id/admin_from"
             android:layout_width="265dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -164,7 +164,7 @@
             app:layout_constraintStart_toEndOf="@+id/textView4" />
 
         <EditText
-            android:id="@+id/editText4"
+            android:id="@+id/admin_stime"
             android:layout_width="265dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -175,7 +175,7 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:textSize="24sp"
-            app:layout_constraintBottom_toTopOf="@+id/editText"
+            app:layout_constraintBottom_toTopOf="@+id/admin_etime"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/textView2"
@@ -183,7 +183,7 @@
             app:layout_constraintVertical_bias="0.878" />
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/adminaddroutetxt"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -196,7 +196,7 @@
             android:textColorLink="#00CE1B1B"
             android:textSize="28sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/editText5"
+            app:layout_constraintBottom_toTopOf="@+id/admin_from"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.615"
             app:layout_constraintStart_toStartOf="parent"

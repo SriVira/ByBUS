@@ -42,7 +42,7 @@
     </LinearLayout>
 
     <ProgressBar
-        android:id="@+id/progressBar7"
+        android:id="@+id/Load_data_progress"
         style="?android:attr/progressBarStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
