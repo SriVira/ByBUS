@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1004021700023",
+    "firebase_url": "https://testapp-31634.firebaseio.com",
+    "project_id": "testapp-31634",
+    "storage_bucket": "testapp-31634.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1004021700023:android:6b001f0df1a9e642f3c432",
+        "android_client_info": {
+          "package_name": "com.example.bussapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1004021700023-i1rnagahf73md6fjocp7qsgc497mv85a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bussapp",
+            "certificate_hash": "4bf9b0031d2155f2793f65627a10952ab4e2ca2d"
+          }
+        },
+        {
+          "client_id": "1004021700023-kc5n0l6192m6vu7f2pjp8dd81o68nbv9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdXGou_oVFdQmyLrNEhMomNd1nh4XcCmM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1004021700023-kc5n0l6192m6vu7f2pjp8dd81o68nbv9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
