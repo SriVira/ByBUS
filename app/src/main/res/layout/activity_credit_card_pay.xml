@@ -80,7 +80,7 @@
         app:layout_constraintVertical_bias="0.968" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/CrdHoldName"
         android:layout_width="212dp"
         android:layout_height="48dp"
         android:layout_marginStart="8dp"
@@ -95,7 +95,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editText7"
+        android:id="@+id/CrdNo"
         android:layout_width="212dp"
         android:layout_height="48dp"
         android:layout_marginStart="8dp"
@@ -110,7 +110,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editText8"
+        android:id="@+id/cvc"
         android:layout_width="212dp"
         android:layout_height="48dp"
         android:layout_marginStart="8dp"
@@ -125,7 +125,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editText9"
+        android:id="@+id/ExpDate"
         android:layout_width="212dp"
         android:layout_height="48dp"
         android:layout_marginStart="8dp"

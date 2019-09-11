@@ -14,7 +14,7 @@
     <string name="RegEmail">Email :</string>
     <string name="RegTitle">Register</string>
     <string name="LogTitle">Login</string>
-    <string name="LogUserName">Username :</string>
+    <string name="LogUserName">Email :</string>
     <string name="LogPassword">Password :</string>
     <string name="LogBtn">Login</string>
     <string name="RegBtn">Register</string>
@@ -125,6 +125,11 @@
     <string name="profileImgBtn" />
     <string name="bookImgBtn" />
     <string name="myBookingsImgBtn" />
+    <string name="RegPass">Password</string>
+    <string name="admin_card_name">Card Holder</string>
+    <string name="admin_payment_cardno">Card Number</string>
+    <string name="admin_payment_cvc">CVC</string>
+    <string name="admin_payment_exp">Exp</string>
 
 
 </resources>

@@ -8,7 +8,7 @@
     tools:context=".MyBookings">
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/Reg"
         android:layout_width="148dp"
         android:layout_height="63dp"
         android:layout_marginStart="8dp"

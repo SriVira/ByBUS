@@ -1,6 +1,9 @@
 package com.example.bussapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -12,87 +15,54 @@ import com.baoyz.swipemenulistview.SwipeMenu;
 import com.baoyz.swipemenulistview.SwipeMenuCreator;
 import com.baoyz.swipemenulistview.SwipeMenuItem;
 import com.baoyz.swipemenulistview.SwipeMenuListView;
+import com.example.bussapp.AdminPayments.PaymentAdapter;
+import com.example.bussapp.Class.CreditCrdPay;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class admin_payments extends AppCompatActivity {
 
     private static  final  String TAG ="admin_payments";
+
+    RecyclerView recyclerView;
+    PaymentAdapter paymentAdapter;
+    List<CreditCrdPay> creditCrdPayList;
+    DatabaseReference DBRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_payments);
 
-        AdminPaymentList();
-    }
+        creditCrdPayList = new ArrayList<CreditCrdPay>();
+        recyclerView = findViewById(R.id.admin_pay_recycler);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
 
-    public void AdminPaymentList(){
-        SwipeMenuListView paymentlistview = (SwipeMenuListView) findViewById(R.id.paymentlist);
-        ArrayList<String> list = new ArrayList<>();
-
-        list.add("Payment_1");
-        list.add("Payment_2");
-        list.add("Payment_3");
-
-        ArrayAdapter booklistArad =  new ArrayAdapter(admin_payments.this,android.R.layout.simple_list_item_1,list);
-        paymentlistview.setAdapter(booklistArad);
-
-        SwipeMenuCreator creator = new SwipeMenuCreator() {
-
+        DBRef = FirebaseDatabase.getInstance().getReference("CreditCardDetails");
+        DBRef.addValueEventListener(new ValueEventListener() {
             @Override
-            public void create(SwipeMenu menu) {
-                // create "open" item
-                SwipeMenuItem openItem = new SwipeMenuItem(
-                        getApplicationContext());
-                // set item background
-                openItem.setBackground(new ColorDrawable(Color.rgb(0x8B, 0x00,
-                        0x8B)));
-                // set item width
-                openItem.setWidth(200);
-                // set item title
-                openItem.setTitle("Confirm");
-                // set item title fontsize
-                openItem.setTitleSize(18);
-
-                // set item title font color
-                openItem.setTitleColor(Color.rgb(0xff, 0xff,0xff));
-                // add to menu
-                menu.addMenuItem(openItem);
-
-                // create "delete" item
-                SwipeMenuItem deleteItem = new SwipeMenuItem(
-                        getApplicationContext());
-                // set item background
-                deleteItem.setBackground(new ColorDrawable(Color.rgb(0x00, 0x00, 0x00)));
-                // set item width
-                deleteItem.setWidth(200);
-                // set a icon
-                deleteItem.setIcon(R.mipmap.deleteicon);
-                // add to menu
-                menu.addMenuItem(deleteItem);
-            }
-        };
-
-        paymentlistview.setMenuCreator(creator);
-
-        paymentlistview.setOnMenuItemClickListener(new SwipeMenuListView.OnMenuItemClickListener() {
-            @Override
-            public boolean onMenuItemClick(int position, SwipeMenu menu, int index) {
-                switch (index) {
-                    case 0:
-                        Log.d(TAG,"Clicked :"+index);
-                        break;
-                    case 1:
-                        Log.d(TAG,"Clicked :"+index);
-                        break;
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                for (DataSnapshot dataSnapshot1:dataSnapshot.getChildren()){
+                    CreditCrdPay creditCrdPay = dataSnapshot1.getValue(CreditCrdPay.class);
+                    creditCrdPayList.add(creditCrdPay);
                 }
-                // false : close the menu; true : not close the menu
-                return false;
+
+                paymentAdapter = new PaymentAdapter(admin_payments.this,creditCrdPayList);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
             }
         });
-
 
 
     }

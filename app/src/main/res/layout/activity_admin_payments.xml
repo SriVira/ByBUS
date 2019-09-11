@@ -6,12 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".admin_payments">
 
-    <com.baoyz.swipemenulistview.SwipeMenuListView
-        android:id="@+id/paymentlist"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorAccent">
+        android:orientation="vertical">
 
-    </com.baoyz.swipemenulistview.SwipeMenuListView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/admin_pay_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
