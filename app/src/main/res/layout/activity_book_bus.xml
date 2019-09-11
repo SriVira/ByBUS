@@ -76,7 +76,7 @@
         app:layout_constraintVertical_bias="0.463" />
 
     <EditText
-        android:id="@+id/admin_etime"
+        android:id="@+id/admin_etime_ud"
         android:layout_width="212dp"
         android:layout_height="48dp"
         android:layout_marginStart="8dp"
@@ -91,7 +91,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/admin_to"
+        android:id="@+id/admin_to_ud"
         android:layout_width="212dp"
         android:layout_height="48dp"
         android:layout_marginStart="8dp"
@@ -106,7 +106,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/admin_rnumber"
+        android:id="@+id/admin_rnumber_ud"
         android:layout_width="212dp"
         android:layout_height="48dp"
         android:layout_marginStart="8dp"
@@ -120,7 +120,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/admin_stime"
+        android:id="@+id/admin_stime_ud"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginStart="8dp"

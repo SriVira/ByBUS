@@ -1,4 +1,4 @@
-package com.example.bussapp;
+package com.example.bussapp.AdminRoute;
 
 public class   RouteDetails {
 

@@ -98,7 +98,7 @@
             tools:text="To" />
 
         <EditText
-            android:id="@+id/admin_etime"
+            android:id="@+id/admin_etime_ud"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_marginStart="8dp"
@@ -113,7 +113,7 @@
             app:layout_constraintStart_toEndOf="@+id/textView3" />
 
         <EditText
-            android:id="@+id/admin_rnumber"
+            android:id="@+id/admin_rnumber_ud"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_marginStart="8dp"
@@ -129,7 +129,7 @@
             app:layout_constraintStart_toEndOf="@+id/textView" />
 
         <EditText
-            android:id="@+id/admin_to"
+            android:id="@+id/admin_to_ud"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_marginStart="8dp"
@@ -144,7 +144,7 @@
             app:layout_constraintStart_toEndOf="@+id/textview" />
 
         <EditText
-            android:id="@+id/admin_from"
+            android:id="@+id/admin_from_ud"
             android:layout_width="0dp"
             android:layout_height="41dp"
             android:layout_marginStart="8dp"
@@ -159,7 +159,7 @@
             app:layout_constraintStart_toEndOf="@+id/textView4" />
 
         <EditText
-            android:id="@+id/admin_stime"
+            android:id="@+id/admin_stime_ud"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_marginStart="8dp"
@@ -187,7 +187,7 @@
             android:textColorLink="#00CE1B1B"
             android:textSize="28sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/admin_from"
+            app:layout_constraintBottom_toTopOf="@+id/admin_from_ud"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.511"
             app:layout_constraintStart_toStartOf="parent"

@@ -26,7 +26,7 @@
             app:layout_constraintTop_toBottomOf="@+id/editText19" />
 
         <EditText
-            android:id="@+id/admin_from"
+            android:id="@+id/admin_from_ud"
             android:layout_width="92dp"
             android:layout_height="26dp"
             android:layout_marginStart="8dp"
@@ -196,7 +196,7 @@
             android:background="@color/TextBoxColor"
             android:ems="10"
             android:inputType="textPersonName"
-            app:layout_constraintBottom_toTopOf="@+id/admin_from"
+            app:layout_constraintBottom_toTopOf="@+id/admin_from_ud"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.638"
             app:layout_constraintStart_toEndOf="@+id/editText19"
