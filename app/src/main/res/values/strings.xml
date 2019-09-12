@@ -130,6 +130,13 @@
     <string name="admin_payment_cardno">Card Number</string>
     <string name="admin_payment_cvc">CVC</string>
     <string name="admin_payment_exp">Exp</string>
+    <string name="PayDetailsCname">Card Holder</string>
+    <string name="PayDetailsCno">Card Number</string>
+    <string name="PayDetailsCvc">CVC</string>
+    <string name="PayDetailsExp">Exp</string>
+    <string name="payDetailsBtnUpdate">Update</string>
+    <string name="PayDetailsBtnDelete">delete</string>
+    <string name="AdminpayAddBtn">ADD</string>
 
 
 </resources>

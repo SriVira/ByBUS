@@ -15,7 +15,9 @@
         android:icon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".admin_payments_list_layout"></activity>
+        <activity android:name=".Admin_Add_Payment"></activity>
+        <activity android:name=".admin_payment_details" />
+        <activity android:name=".admin_payments_list_layout" />
         <activity
             android:name=".admin_add_route"
             android:label="@string/admin_add_route"
