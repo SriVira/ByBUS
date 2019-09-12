@@ -7,6 +7,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.bussapp.AdminPassenger.admin_pasengers;
+import com.example.bussapp.AdminRoute.admin_routes;
+
 public class admin_dashboard extends AppCompatActivity {
 
     @Override
@@ -39,7 +42,7 @@ public class admin_dashboard extends AppCompatActivity {
     }
 
     public  void admin_click_passengers(View V){
-        Intent admin_click_passengers =new Intent(this,admin_pasengers.class);
+        Intent admin_click_passengers =new Intent(this, admin_pasengers.class);
         startActivity(admin_click_passengers);
     }
 
@@ -49,7 +52,7 @@ public class admin_dashboard extends AppCompatActivity {
     }
 
     public  void admin_click_routes(View V){
-        Intent admin_click_routes =new Intent(this,admin_routes.class);
+        Intent admin_click_routes =new Intent(this, admin_routes.class);
         startActivity(admin_click_routes);
 
 

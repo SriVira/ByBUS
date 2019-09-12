@@ -2,26 +2,21 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.bussapp">
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
-    <supports-screens
-        android:largeScreens="true"
-        android:normalScreens="true"
-        android:smallScreens="true"
-        android:xlargeScreens="true" />
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Admin_Add_Payment"></activity>
-        <activity android:name=".admin_payment_details" />
-        <activity android:name=".admin_payments_list_layout" />
-        <activity
-            android:name=".admin_add_route"
+        <activity android:name=".admin_add_route"
             android:label="@string/admin_add_route"
-            android:parentActivityName=".admin_routes" /> <!-- Login,Reset,Reg Activities -->
+            android:parentActivityName=".admin_routes"
+
+            />
+
+        <!-- Login,Reset,Reg Activities -->
         <activity
             android:name=".user_login"
             android:label="@string/user_login_title"
@@ -103,7 +98,7 @@
         <activity
             android:name=".admin_settings"
             android:label="@string/admin_settings_title"
-            android:parentActivityName=".admin_dashboard" /> <!-- Driver Activities -->
+            android:parentActivityName=".admin_dashboard"></activity> <!-- Driver Activities -->
         <activity
             android:name=".driver_dashboard"
             android:label="@string/driver_dashboard_title"
@@ -140,5 +135,11 @@
             </intent-filter>
         </activity>
     </application>
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
 
 </manifest>

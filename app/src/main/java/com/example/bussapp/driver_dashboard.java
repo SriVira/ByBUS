@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
 public class driver_dashboard extends AppCompatActivity {
 
@@ -23,7 +22,7 @@ public class driver_dashboard extends AppCompatActivity {
    // }
 
     public void add_route(View v) {
-        Intent add_route = new Intent(driver_dashboard.this,Add_route.class);
+        Intent add_route = new Intent(driver_dashboard.this, Add_route.class);
         startActivity(add_route);
     }
 

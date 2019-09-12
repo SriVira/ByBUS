@@ -4,14 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".admin_pasengers">
+    tools:context=".AdminPassenger.admin_pasengers">
 
-    <com.baoyz.swipemenulistview.SwipeMenuListView
-        android:id="@+id/passengerlist"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorAccent">
+        android:orientation="vertical">
 
-    </com.baoyz.swipemenulistview.SwipeMenuListView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/passenger_recy_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

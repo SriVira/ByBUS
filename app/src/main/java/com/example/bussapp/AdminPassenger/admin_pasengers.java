@@ -1,4 +1,4 @@
-package com.example.bussapp;
+package com.example.bussapp.AdminPassenger;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,13 +10,10 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ArrayAdapter;
+import android.widget.Toast;
 
-import com.baoyz.swipemenulistview.SwipeMenu;
-import com.baoyz.swipemenulistview.SwipeMenuCreator;
-import com.baoyz.swipemenulistview.SwipeMenuItem;
-import com.baoyz.swipemenulistview.SwipeMenuListView;
-//import com.example.bussapp.AdminPayments.PaymentAdapter;
-//import com.example.bussapp.Class.CreditCrdPay;
+import com.example.bussapp.Class.Register;
+import com.example.bussapp.R;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -26,44 +23,53 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
-public class admin_payments extends AppCompatActivity {
+public class admin_pasengers extends AppCompatActivity {
 
-    private static  final  String TAG ="admin_payments";
-/*
+
+    private static  final  String TAG ="admin_pasengers";
     RecyclerView recyclerView;
-    PaymentAdapter paymentAdapter;
-    List<CreditCrdPay> creditCrdPayList;
+    PassengerAdapter passengerAdapter;
+    List<Register> registerList;
     DatabaseReference DBRef;
-*/
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_admin_payments);
-/*
-        creditCrdPayList = new ArrayList<CreditCrdPay>();
-        recyclerView = findViewById(R.id.admin_pay_recycler);
+        setContentView(R.layout.activity_admin_pasengers);
+
+        registerList =new ArrayList<Register>();
+        recyclerView =findViewById(R.id.passenger_recy_list);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        DBRef = FirebaseDatabase.getInstance().getReference().child("RegisterDetails");
 
 
-        DBRef = FirebaseDatabase.getInstance().getReference("CreditCardDetails");
         DBRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                for (DataSnapshot dataSnapshot1:dataSnapshot.getChildren()){
-                    CreditCrdPay creditCrdPay = dataSnapshot1.getValue(CreditCrdPay.class);
-                    creditCrdPayList.add(creditCrdPay);
+
+                for(DataSnapshot dataSnapshot1 :dataSnapshot.getChildren()){
+
+                    Register register = dataSnapshot1.getValue(Register.class);
+                    registerList.add(register);
+
                 }
 
-                paymentAdapter = new PaymentAdapter(admin_payments.this,creditCrdPayList);
+                passengerAdapter =new PassengerAdapter(admin_pasengers.this,registerList);
+                recyclerView.setAdapter(passengerAdapter);
+
+
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-
+                Toast.makeText(admin_pasengers.this,"No Route Data Found.",Toast.LENGTH_LONG).show();
             }
         });
 
-*/
+
     }
+
+
 }
