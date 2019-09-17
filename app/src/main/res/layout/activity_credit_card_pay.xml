@@ -18,7 +18,7 @@
         android:text="@string/crdHolder"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView22"
+        app:layout_constraintBottom_toTopOf="@+id/txtPName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.094"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,7 +26,7 @@
         app:layout_constraintVertical_bias="0.964" />
 
     <TextView
-        android:id="@+id/textView22"
+        android:id="@+id/txtPName"
         android:layout_width="113dp"
         android:layout_height="40dp"
         android:layout_marginStart="8dp"
@@ -36,7 +36,7 @@
         android:text="@string/crdNo"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView24"
+        app:layout_constraintBottom_toTopOf="@+id/txtPEmail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.081"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,7 +62,7 @@
         app:layout_constraintVertical_bias="0.586" />
 
     <TextView
-        android:id="@+id/textView24"
+        android:id="@+id/txtPEmail"
         android:layout_width="113dp"
         android:layout_height="40dp"
         android:layout_marginStart="8dp"
@@ -80,7 +80,7 @@
         app:layout_constraintVertical_bias="0.968" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/CrdHoldName"
         android:layout_width="212dp"
         android:layout_height="48dp"
         android:layout_marginStart="8dp"
@@ -95,7 +95,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editText7"
+        android:id="@+id/CrdNo"
         android:layout_width="212dp"
         android:layout_height="48dp"
         android:layout_marginStart="8dp"
@@ -104,13 +104,13 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/inputCrdNo"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView22"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtPName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editText8"
+        android:id="@+id/cvc"
         android:layout_width="212dp"
         android:layout_height="48dp"
         android:layout_marginStart="8dp"
@@ -119,13 +119,13 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/inputCVC"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView24"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtPEmail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editText9"
+        android:id="@+id/ExpDate"
         android:layout_width="212dp"
         android:layout_height="48dp"
         android:layout_marginStart="8dp"
@@ -140,7 +140,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/btnCrdPay"
         android:layout_width="320dp"
         android:layout_height="65dp"
         android:layout_marginStart="8dp"

@@ -5,9 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorAccent"
@@ -23,10 +21,10 @@
             android:text="@string/enterSeat"
             android:textColor="@color/BlackColour"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText19" />
+            app:layout_constraintTop_toBottomOf="@+id/txtSBookedSeats" />
 
         <EditText
-            android:id="@+id/admin_from"
+            android:id="@+id/seatNo"
             android:layout_width="92dp"
             android:layout_height="26dp"
             android:layout_marginStart="8dp"
@@ -141,7 +139,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/btnBookNow"
             android:layout_width="320dp"
             android:layout_height="55dp"
             android:layout_marginStart="8dp"
@@ -149,7 +147,6 @@
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             android:background="@color/colorPrimary"
-            android:onClick="BookNowbtnclick"
             android:text="@string/bookNow"
             android:textColor="@color/white"
             android:textSize="18sp"
@@ -161,7 +158,7 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <EditText
-            android:id="@+id/editText10"
+            android:id="@+id/txtSConNo"
             android:layout_width="208dp"
             android:layout_height="29dp"
             android:layout_marginStart="8dp"
@@ -174,7 +171,7 @@
             app:layout_constraintStart_toEndOf="@+id/textView11" />
 
         <EditText
-            android:id="@+id/editText13"
+            android:id="@+id/txtSDTime"
             android:layout_width="208dp"
             android:layout_height="29dp"
             android:layout_marginStart="8dp"
@@ -187,7 +184,7 @@
             app:layout_constraintStart_toEndOf="@+id/textView15" />
 
         <EditText
-            android:id="@+id/editText16"
+            android:id="@+id/txtSAvailabeSeates"
             android:layout_width="92dp"
             android:layout_height="31dp"
             android:layout_marginStart="8dp"
@@ -196,14 +193,14 @@
             android:background="@color/TextBoxColor"
             android:ems="10"
             android:inputType="textPersonName"
-            app:layout_constraintBottom_toTopOf="@+id/admin_from"
+            app:layout_constraintBottom_toTopOf="@+id/seatNo"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.638"
-            app:layout_constraintStart_toEndOf="@+id/editText19"
+            app:layout_constraintStart_toEndOf="@+id/txtSBookedSeats"
             app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
         <EditText
-            android:id="@+id/editText19"
+            android:id="@+id/txtSBookedSeats"
             android:layout_width="92dp"
             android:layout_height="25dp"
             android:layout_marginStart="20dp"
@@ -215,7 +212,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
         <EditText
-            android:id="@+id/editText18"
+            android:id="@+id/txtSArTime"
             android:layout_width="208dp"
             android:layout_height="29dp"
             android:layout_marginStart="8dp"
@@ -229,7 +226,7 @@
             app:layout_constraintStart_toEndOf="@+id/textView9" />
 
         <EditText
-            android:id="@+id/editText15"
+            android:id="@+id/txtSto"
             android:layout_width="208dp"
             android:layout_height="29dp"
             android:layout_marginStart="8dp"
@@ -243,7 +240,7 @@
             app:layout_constraintStart_toEndOf="@+id/textView13" />
 
         <EditText
-            android:id="@+id/editText14"
+            android:id="@+id/txtSfrom"
             android:layout_width="208dp"
             android:layout_height="29dp"
             android:layout_marginStart="8dp"
@@ -257,7 +254,7 @@
             app:layout_constraintStart_toEndOf="@+id/textView10" />
 
         <EditText
-            android:id="@+id/editText12"
+            android:id="@+id/txtSDName"
             android:layout_width="208dp"
             android:layout_height="29dp"
             android:layout_marginStart="8dp"
@@ -270,7 +267,7 @@
             app:layout_constraintStart_toEndOf="@+id/textView7" />
 
         <EditText
-            android:id="@+id/editText11"
+            android:id="@+id/txtSBusNo"
             android:layout_width="208dp"
             android:layout_height="29dp"
             android:layout_marginStart="8dp"

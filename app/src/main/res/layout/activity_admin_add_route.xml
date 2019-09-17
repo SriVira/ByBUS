@@ -39,7 +39,7 @@
                 android:textSize="24sp" />
 
             <EditText
-                android:id="@+id/admin_from"
+                android:id="@+id/seatNo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -64,7 +64,7 @@
                 android:textSize="24sp" />
 
             <EditText
-                android:id="@+id/admin_to"
+                android:id="@+id/txtTo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -89,7 +89,7 @@
                 android:textSize="24sp" />
 
             <EditText
-                android:id="@+id/admin_stime"
+                android:id="@+id/txtTime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -115,7 +115,7 @@
                 android:textSize="24sp" />
 
             <EditText
-                android:id="@+id/admin_etime"
+                android:id="@+id/txtFrom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -140,7 +140,7 @@
                 android:textSize="24sp" />
 
             <EditText
-                android:id="@+id/admin_rnumber"
+                android:id="@+id/txtDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

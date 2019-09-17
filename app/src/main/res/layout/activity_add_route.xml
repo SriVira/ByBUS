@@ -17,7 +17,7 @@
 
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnSearch"
             android:layout_width="139dp"
             android:layout_height="49dp"
             android:layout_marginStart="8dp"
@@ -44,7 +44,7 @@
             android:text="Route No"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="18sp"
-            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintBottom_toTopOf="@+id/btnSearch"
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
@@ -100,7 +100,7 @@
             tools:text="To" />
 
         <EditText
-            android:id="@+id/admin_etime"
+            android:id="@+id/txtFrom"
             android:layout_width="265dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -115,7 +115,7 @@
             app:layout_constraintStart_toEndOf="@+id/textView3" />
 
         <EditText
-            android:id="@+id/admin_rnumber"
+            android:id="@+id/txtDate"
             android:layout_width="265dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -125,13 +125,13 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:textSize="24sp"
-            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintBottom_toTopOf="@+id/btnSearch"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/textView" />
 
         <EditText
-            android:id="@+id/admin_to"
+            android:id="@+id/txtTo"
             android:layout_width="265dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -142,14 +142,14 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:textSize="24sp"
-            app:layout_constraintBottom_toTopOf="@+id/admin_stime"
+            app:layout_constraintBottom_toTopOf="@+id/txtTime"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/textview"
-            app:layout_constraintTop_toBottomOf="@+id/admin_from" />
+            app:layout_constraintTop_toBottomOf="@+id/seatNo" />
 
         <EditText
-            android:id="@+id/admin_from"
+            android:id="@+id/seatNo"
             android:layout_width="265dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -164,7 +164,7 @@
             app:layout_constraintStart_toEndOf="@+id/textView4" />
 
         <EditText
-            android:id="@+id/admin_stime"
+            android:id="@+id/txtTime"
             android:layout_width="265dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -175,7 +175,7 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:textSize="24sp"
-            app:layout_constraintBottom_toTopOf="@+id/admin_etime"
+            app:layout_constraintBottom_toTopOf="@+id/txtFrom"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/textView2"
@@ -196,7 +196,7 @@
             android:textColorLink="#00CE1B1B"
             android:textSize="28sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/admin_from"
+            app:layout_constraintBottom_toTopOf="@+id/seatNo"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.615"
             app:layout_constraintStart_toStartOf="parent"

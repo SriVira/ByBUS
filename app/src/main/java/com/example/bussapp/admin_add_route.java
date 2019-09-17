@@ -29,11 +29,11 @@ public class admin_add_route extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_add_route);
 
-        From = findViewById(R.id.admin_from);
-        To = findViewById(R.id.admin_to);
-        StartTime = findViewById(R.id.admin_stime);
-        EndTime = findViewById(R.id.admin_etime);
-        Rnumber =findViewById(R.id.admin_rnumber);
+        From = findViewById(R.id.seatNo);
+        To = findViewById(R.id.txtTo);
+        StartTime = findViewById(R.id.txtTime);
+        EndTime = findViewById(R.id.txtFrom);
+        Rnumber =findViewById(R.id.txtDate);
         AddRoute = findViewById(R.id.admin_addroute_btn);
 
         routes =new RouteDetails();
