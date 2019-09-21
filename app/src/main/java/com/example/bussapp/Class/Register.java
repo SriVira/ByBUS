@@ -5,16 +5,38 @@ public class Register {
     private int ConNo;
     private String Email;
     private String Pass;
+    private String RadioButton1;
+    private String RadioButton2;
 
 
     public Register() {
     }
 
-    public Register(String name, int conNo, String email, String pass) {
+    public Register(String name, int conNo, String email, String pass, String RadioButton1,String RadioButton2) {
         Name = name;
         ConNo = conNo;
         Email = email;
         Pass = pass;
+        RadioButton1 = RadioButton1;
+        RadioButton2= RadioButton2;
+
+
+    }
+
+    public String getRadioButton1() {
+        return RadioButton1;
+    }
+
+    public void setRadioButton1(String radioButton1) {
+        RadioButton1 = radioButton1;
+    }
+
+    public String getRadioButton2() {
+        return RadioButton2;
+    }
+
+    public void setRadioButton2(String radioButton2) {
+        RadioButton2 = radioButton2;
     }
 
     public String getName() {

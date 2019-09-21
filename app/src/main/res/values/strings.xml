@@ -20,7 +20,6 @@
     <string name="RegBtn">Register</string>
     <string name="user_register_title">Register</string>
     <string name="LogForgotPassword">Forgot Your Password?</string>
-    <string name="ForgotContact">Contact No :</string>
     <string name="ForgotNewPassword">New Password :</string>
     <string name="ForgotSendBtn">Send</string>
     <string name="RegRadioPassenger">Passenger</string>
@@ -137,6 +136,7 @@
     <string name="payDetailsBtnUpdate">Update</string>
     <string name="PayDetailsBtnDelete">delete</string>
     <string name="AdminpayAddBtn">ADD</string>
+    <string name="ForgotContact">Email :</string>
 
 
 </resources>

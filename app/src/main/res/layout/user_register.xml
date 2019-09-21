@@ -58,6 +58,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="@color/BtnColor"
+        android:onClick="onClick"
         android:text="@string/RegBtn"
         android:textColor="@color/colorAccent"
         android:textSize="14sp"
@@ -83,13 +84,12 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <RadioButton
-        android:id="@+id/radioButton"
-        style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+        android:id="@+id/radioButton1"
+        style="@android:style/Widget.CompoundButton.RadioButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:checked="false"
         android:shadowColor="@color/colorPrimary"
         android:text="@string/RegRadioPassenger"
         android:textStyle="normal|bold"
