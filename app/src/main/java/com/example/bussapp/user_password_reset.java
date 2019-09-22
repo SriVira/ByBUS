@@ -32,6 +32,12 @@ public class  user_password_reset extends AppCompatActivity {
         forgotSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                if(forgotEmail.getText().toString().isEmpty()){
+                    forgotEmail.setError("Email is required");
+                    forgotEmail.requestFocus();
+                    return;
+                }
                 firebaseAuth.sendPasswordResetEmail(forgotEmail.getText().toString()).addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {

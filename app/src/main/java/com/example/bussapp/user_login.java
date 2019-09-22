@@ -56,6 +56,15 @@ public class user_login extends AppCompatActivity implements View.OnClickListene
        login.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View view) {
+               if(UserName.getText().toString().isEmpty()){
+                   UserName.setError("Email is required");
+                   UserName.requestFocus();
+                   return;
+               }if (UserPassword.getText().toString().isEmpty()){
+                   UserPassword.setError("Password is required");
+                   UserPassword.requestFocus();
+                   return;
+               }
 
                if (UserName.getText().toString().equals("admin")&& UserPassword.getText().toString().equals("admin")) {
                    Intent intent = new Intent(user_login.this, admin_dashboard.class);
@@ -124,9 +133,10 @@ public class user_login extends AppCompatActivity implements View.OnClickListene
                            startActivity(new Intent(user_login.this, Passenger.class));
                        }else if (task.isSuccessful() && type.equals("Driver") ){
                            startActivity(new Intent(user_login.this,driver_dashboard.class));
-                       } else {
+                       }else {
                            Toast.makeText(user_login.this,"Wrong Email or Password",Toast.LENGTH_LONG).show();
                        }
+
                    }
                });
 

@@ -2,6 +2,7 @@ package com.example.bussapp;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
@@ -24,6 +25,9 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+
 public class user_register extends AppCompatActivity implements View.OnClickListener {
 
     EditText Name, ConNo, Email, Pass;
@@ -31,6 +35,7 @@ public class user_register extends AppCompatActivity implements View.OnClickList
     RadioButton radioButton1,radioButton2;
     RadioGroup radioGroup;
     Register register;
+
 
 
     DatabaseReference DBRef;
@@ -49,6 +54,8 @@ public class user_register extends AppCompatActivity implements View.OnClickList
         radioButton2 = findViewById(R.id.radioButton2);
         //radioGroup = findViewById(R.id.radioGroup);
        // reg = findViewById(R.id.Reg);
+
+
 
         findViewById(R.id.Reg).setOnClickListener(this);
 
@@ -92,6 +99,27 @@ public class user_register extends AppCompatActivity implements View.OnClickList
 
 
     }
+   /* public void computeMD5Hash(String password){
+        try{
+            MessageDigest digest = java.security.MessageDigest.getInstance("MD5");
+            digest.update(password.getBytes());
+            byte messageDigest[] = digest.digest();
+
+            StringBuffer MD5Hash = new StringBuffer();
+            for (int i = 0; i < messageDigest.length;i++)
+            {
+                String h = Integer.toHexString(0xFF & messageDigest[i]);
+                while (h.length()<2)
+                    h = "0"+h;
+                MD5Hash.append(h);
+            }
+
+            result.setText(HD5Hash);
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+        }
+    }*/
+
 
     public  void gotoLogin(View v){
 
@@ -100,8 +128,16 @@ public class user_register extends AppCompatActivity implements View.OnClickList
     }
 
     private  void  registerUser(){
+        String name = Name.getText().toString().trim();
         String email = Email.getText().toString().trim();
         String password = Pass.getText().toString().trim();
+        String con = ConNo.getText().toString().trim();
+
+        if(name.isEmpty()){
+            Name.setError("Name is required");
+            Name.requestFocus();
+           return;
+        }
 
         if(email.isEmpty()){
             Email.setError("Email is required");
@@ -120,6 +156,8 @@ public class user_register extends AppCompatActivity implements View.OnClickList
             Pass.requestFocus();
             return;
         }
+
+
 
          if(password.length()<6){
              Pass.setError("Minimum length of password should be 6");
@@ -166,7 +204,6 @@ public class user_register extends AppCompatActivity implements View.OnClickList
             if (radioButton2.isChecked()) {
                 register.setRadioButton2(radioButton2.getText().toString().trim());
                 DBRef.child(radioButton2.getText().toString()).push().setValue(register);
-
             }
 
 
@@ -183,9 +220,13 @@ public class user_register extends AppCompatActivity implements View.OnClickList
             //
             //
             // Toast.makeText(user_register.this, "Registered Successfully", Toast.LENGTH_LONG).show();
-        }catch(Exception ex){
-
-            Toast.makeText(user_register.this,ex.getMessage().toString(),Toast.LENGTH_LONG).show();
+        }catch(Exception ex) {
+            if (!Name.getText().toString().isEmpty() && Email.getText().toString().isEmpty() && Pass.getText().toString().isEmpty()) {
+                 ConNo.setError("Number should have 10 digits");
+                ConNo.requestFocus();
+                 return;
+                //Toast.makeText(user_register.this,ex.getMessage().toString(),Toast.LENGTH_LONG).show();
+            }
         }
 
     }
