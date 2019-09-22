@@ -28,13 +28,13 @@ public class BookBus extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_book_bus);
-
+/*
         txtFrom=findViewById(R.id.txtFrom);
         txtTo=findViewById(R.id.txtTo);
         txtDate=findViewById(R.id.txtDate);
         txtTime=findViewById(R.id.txtTime);
         btnSearch=findViewById(R.id.btnSearch);
-
+*/
         srchBus=new SearchBus();
 
        /* DBRef = FirebaseDatabase.getInstance().getReference().child("Routes_Data");

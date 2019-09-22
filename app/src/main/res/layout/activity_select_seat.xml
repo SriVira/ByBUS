@@ -24,6 +24,8 @@
             app:layout_constraintTop_toBottomOf="@+id/txtSBookedSeats" />
 
         <EditText
+
+
             android:id="@+id/seatNo"
             android:layout_width="92dp"
             android:layout_height="26dp"
@@ -171,6 +173,8 @@
             app:layout_constraintStart_toEndOf="@+id/textView11" />
 
         <EditText
+
+
             android:id="@+id/txtSDTime"
             android:layout_width="208dp"
             android:layout_height="29dp"
@@ -188,14 +192,13 @@
             android:layout_width="92dp"
             android:layout_height="31dp"
             android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
             android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
             android:background="@color/TextBoxColor"
             android:ems="10"
             android:inputType="textPersonName"
-            app:layout_constraintBottom_toTopOf="@+id/seatNo"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.638"
+            app:layout_constraintHorizontal_bias="0.602"
             app:layout_constraintStart_toEndOf="@+id/txtSBookedSeats"
             app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
@@ -240,6 +243,8 @@
             app:layout_constraintStart_toEndOf="@+id/textView13" />
 
         <EditText
+
+
             android:id="@+id/txtSfrom"
             android:layout_width="208dp"
             android:layout_height="29dp"
@@ -254,6 +259,8 @@
             app:layout_constraintStart_toEndOf="@+id/textView10" />
 
         <EditText
+
+
             android:id="@+id/txtSDName"
             android:layout_width="208dp"
             android:layout_height="29dp"
@@ -280,17 +287,27 @@
             app:layout_constraintHorizontal_bias="0.53"
             app:layout_constraintStart_toEndOf="@+id/textView8" />
 
-
-        android:layout_width="395dp"
-        android:layout_height="205dp"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp">
-
         <LinearLayout
+            android:id="@+id/linearLayout3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/routeNo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="92dp"
+            android:textAlignment="center"
+            android:textColor="@color/BlackColour"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.032" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

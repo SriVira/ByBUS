@@ -6,6 +6,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -23,6 +24,8 @@ public class SelectSeat extends AppCompatActivity {
     EditText seatNo, txtSBusNo,txtSDName,txtSConNo,txtSfrom,txtSto,txtSDTime,txtSArTime,txtSBookedSeats,txtSAvailabeSeates;
     Button btnBookNow;
     BookSeat bSeat;
+    TextView txtrouteNo;
+    DatabaseReference DBRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,8 +46,10 @@ public class SelectSeat extends AppCompatActivity {
         txtSArTime = findViewById(R.id.txtSArTime);
         txtSBookedSeats = findViewById(R.id.txtSBookedSeats);
         txtSAvailabeSeates = findViewById(R.id.txtSAvailabeSeates);
+        txtrouteNo=findViewById(R.id.routeNo);
 
 
+        GetRouteDetails();
         bSeat = new BookSeat();
 
         DBRef = FirebaseDatabase.getInstance().getReference().child("BookSeat");
@@ -70,12 +75,30 @@ public class SelectSeat extends AppCompatActivity {
                             Toast.makeText(getApplicationContext(), "Please enter a seat number", Toast.LENGTH_SHORT).show();
                         else {
                             bSeat.setSeatNo(Integer.parseInt(seatNo.getText().toString().trim()));
-                            DBRef.push().setValue(bSeat);
+                            bSeat.setTxtSfrom(txtSfrom.getText().toString().trim());
+                            bSeat.setTxtSto(txtSto.getText().toString().trim());
+                            bSeat.setTxtSDTime(txtSDTime.getText().toString().trim());
+                            bSeat.setTxtSArTime(txtSArTime.getText().toString().trim());
+                            bSeat.setTxtrouteNo(txtrouteNo.getText().toString().trim());
+                            bSeat.setTxtSBusNo(txtSBusNo.getText().toString().trim());
+                            bSeat.setTxtSDName(txtSDName.getText().toString().trim());
+                            bSeat.setTxtSConNo(txtSConNo.getText().toString().trim());
+                            bSeat.setTxtSBookedSeats(txtSBookedSeats.getText().toString().trim());
+                            bSeat.setTxtSAvailabeSeates(txtSAvailabeSeates.getText().toString().trim());
+
+
+                            DBRef.child(seatNo.getText().toString()).setValue(bSeat);
+                            //DBRef.push().setValue(bSeat);
+
                             Intent intent2 = new Intent(SelectSeat.this, PayNow.class);
                             startActivity(intent2);
                         }
                     }
                 });
+
+
+
+
 
 
         /*DatabaseReference DBRef = FirebaseDatabase.getInstance().getReference().child("");
@@ -98,6 +121,33 @@ public class SelectSeat extends AppCompatActivity {
          */
 
 
+    }
+
+    private void GetRouteDetails(){
+        if(getIntent().hasExtra("RouteNo")){
+
+
+            DBRef=FirebaseDatabase.getInstance().getReference().child("Routes_Data").child(getIntent().getStringExtra("RouteNo").toString());
+            DBRef.addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    if(dataSnapshot.hasChildren()){
+                        txtSDTime.setText(dataSnapshot.child("startTime").getValue().toString());
+                        txtSArTime.setText(dataSnapshot.child("endTime").getValue().toString());
+                        txtSfrom.setText(dataSnapshot.child("from").getValue().toString());
+                        txtSto.setText(dataSnapshot.child("to").getValue().toString());
+                        txtrouteNo.setText(dataSnapshot.child("rnumber").getValue().toString());
+
+                        Toast.makeText(SelectSeat.this,"Load Data Successfull",Toast.LENGTH_LONG);
+                    }
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                }
+            });
+        }
     }
 
 }

@@ -8,7 +8,7 @@
     tools:context=".Ratings">
 
     <RatingBar
-        android:id="@+id/ratingBar"
+        android:id="@+id/Passenger_ratingBar"
         android:layout_width="243dp"
         android:layout_height="57dp"
         android:layout_marginStart="8dp"
@@ -22,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/btn_rating_submit"
         android:layout_width="130dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"

@@ -7,23 +7,11 @@
     android:background="@color/colorAccent"
     tools:context=".MyBookings">
 
-    <Button
-        android:id="@+id/Reg"
-        android:layout_width="148dp"
-        android:layout_height="63dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@color/colorPrimary"
-        android:text="@string/deleteBtn"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.889"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.961" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/myb_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="55dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
