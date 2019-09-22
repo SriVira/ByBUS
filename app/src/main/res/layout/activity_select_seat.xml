@@ -51,7 +51,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/textViewForgot"
             android:layout_width="124dp"
             android:layout_height="20dp"
             android:layout_marginStart="20dp"
@@ -138,7 +138,7 @@
             android:text="@string/contactNo"
             android:textColor="@color/BlackColour"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+            app:layout_constraintTop_toBottomOf="@+id/textViewForgot" />
 
         <Button
             android:id="@+id/btnBookNow"
@@ -269,9 +269,9 @@
             android:background="@color/TextBoxColor"
             android:ems="10"
             android:inputType="textPersonName"
-            app:layout_constraintBaseline_toBaselineOf="@+id/textView7"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textViewForgot"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/textView7" />
+            app:layout_constraintStart_toEndOf="@+id/textViewForgot" />
 
         <EditText
             android:id="@+id/txtSBusNo"

@@ -1,11 +1,11 @@
 package com.example.bussapp.Class;
 
 public class Register {
-
-    private  String Name;
-    private  int ConNo;
+    private String Name;
+    private int ConNo;
     private String Email;
-    private  String Pass;
+    private String Pass;
+
 
     public Register() {
     }
@@ -21,24 +21,12 @@ public class Register {
         return Name;
     }
 
-    public void setName(String name) {
-        Name = name;
-    }
-
     public int getConNo() {
         return ConNo;
     }
 
-    public void setConNo(int conNo) {
-        ConNo = conNo;
-    }
-
     public String getEmail() {
         return Email;
-    }
-
-    public void setEmail(String email) {
-        Email = email;
     }
 
     public String getPass() {
@@ -47,5 +35,17 @@ public class Register {
 
     public void setPass(String pass) {
         Pass = pass;
+    }
+
+    public void setName(String name) {
+        Name = name;
+    }
+
+    public void setConNo(int conNo) {
+        ConNo = conNo;
+    }
+
+    public void setEmail(String email) {
+        Email = email;
     }
 }
