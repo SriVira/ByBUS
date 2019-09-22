@@ -100,7 +100,8 @@
             tools:text="To" />
 
         <EditText
-            android:id="@+id/txtFrom"
+
+
             android:layout_width="265dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -115,7 +116,7 @@
             app:layout_constraintStart_toEndOf="@+id/textViewSignup" />
 
         <EditText
-            android:id="@+id/txtDate"
+
             android:layout_width="265dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -131,7 +132,7 @@
             app:layout_constraintStart_toEndOf="@+id/textView" />
 
         <EditText
-            android:id="@+id/txtTo"
+
             android:layout_width="265dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -142,6 +143,7 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:textSize="24sp"
+
             app:layout_constraintBottom_toTopOf="@+id/txtTime"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
@@ -150,6 +152,16 @@
 
         <EditText
             android:id="@+id/seatNo"
+
+            app:layout_constraintBottom_toTopOf="@+id/admin_stime_ud"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textview"
+            app:layout_constraintTop_toBottomOf="@+id/admin_from_ud" />
+
+        <EditText
+            android:id="@+id/admin_from_ud"
+
             android:layout_width="265dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -164,7 +176,8 @@
             app:layout_constraintStart_toEndOf="@+id/textView4" />
 
         <EditText
-            android:id="@+id/txtTime"
+
+
             android:layout_width="265dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -175,7 +188,8 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:textSize="24sp"
-            app:layout_constraintBottom_toTopOf="@+id/txtFrom"
+
+
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/textView2"
@@ -196,7 +210,8 @@
             android:textColorLink="#00CE1B1B"
             android:textSize="28sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/seatNo"
+
+
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.615"
             app:layout_constraintStart_toStartOf="parent"

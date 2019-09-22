@@ -184,7 +184,7 @@ public class user_login extends AppCompatActivity implements View.OnClickListene
 
         }
 
-        else if(Uname.equals("passenger") && Upass.equals("passenger")){
+        else if(Uname.equals("p") && Upass.equals("p")){
 
             Intent passenger = new Intent(user_login.this, Passenger.class);
             startActivity(passenger);

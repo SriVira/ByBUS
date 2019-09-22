@@ -1,64 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/list_item_layout"
+    android:id="@+id/passenger_cardview_layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
     <androidx.cardview.widget.CardView
-
-        android:id="@+id/routecard"
+        android:id="@+id/passenger_cardview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity=""
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="5dp"
-        android:background="@color/LinkColor">
+        android:layout_margin="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/colorAccent"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/rnumbertxt"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/BlackColour"
-                android:text="Rno"
-                android:textAlignment="center"
-                android:textColor="@color/colorAccent"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/stimetxt"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:paddingLeft="20dp"
-                    android:text="Stime"
+                    android:text="Name :"
                     android:textColor="@color/BlackColour"
-                    android:textSize="24sp"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/etimetxt"
+                    android:id="@+id/passenger_nametxt"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:paddingRight="20dp"
-                    android:text="Etime"
-                    android:textAlignment="textEnd"
                     android:textColor="@color/BlackColour"
-                    android:textSize="24sp"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -68,29 +49,24 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/fromtxt"
+                    android:id="@+id/textView36"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:paddingLeft="20dp"
-                    android:text="From"
+                    android:text="Contact :"
                     android:textColor="@color/BlackColour"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/totxt"
+                    android:id="@+id/passenger_contacttxt"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:paddingRight="20dp"
-                    android:text="To"
-                    android:textAlignment="textEnd"
                     android:textColor="@color/BlackColour"
                     android:textSize="18sp"
                     android:textStyle="bold" />
             </LinearLayout>
-
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 </RelativeLayout>

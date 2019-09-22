@@ -1,6 +1,6 @@
-package com.example.bussapp;
+package com.example.bussapp.AdminRoute;
 
-public class RouteDetails {
+public class   RouteDetails {
 
     private String From;
     private String TO;

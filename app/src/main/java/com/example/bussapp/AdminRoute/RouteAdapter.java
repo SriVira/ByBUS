@@ -1,14 +1,17 @@
-package com.example.bussapp;
+package com.example.bussapp.AdminRoute;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.bussapp.R;
 
 import java.util.List;
 
@@ -32,7 +35,7 @@ public class RouteAdapter extends RecyclerView.Adapter<RouteAdapter.RouteViewHol
     }
 
     @Override
-    public void onBindViewHolder(@NonNull RouteViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull final RouteViewHolder holder, int position) {
 
         RouteDetails routeDetails =routeDetailsList.get(position);
 
@@ -42,6 +45,16 @@ public class RouteAdapter extends RecyclerView.Adapter<RouteAdapter.RouteViewHol
         holder.From.setText(routeDetails.getFrom());
         holder.To.setText(routeDetails.getTO());
 
+        holder.list_item_layout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(context, activity_admin_updel_route_details.class);
+                intent.putExtra("RouteNumber",holder.Rnumber.getText());
+                context.startActivity(intent);
+
+            }
+        });
     }
 
     @Override
@@ -52,7 +65,7 @@ public class RouteAdapter extends RecyclerView.Adapter<RouteAdapter.RouteViewHol
     class RouteViewHolder extends RecyclerView.ViewHolder {
 
         TextView Rnumber,StartTime,EndTime,From,To;
-
+        RelativeLayout list_item_layout;
 
         public RouteViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -62,6 +75,7 @@ public class RouteAdapter extends RecyclerView.Adapter<RouteAdapter.RouteViewHol
             EndTime =itemView.findViewById(R.id.etimetxt);
             From =itemView.findViewById(R.id.fromtxt);
             To =itemView.findViewById(R.id.totxt);
+            list_item_layout =itemView.findViewById(R.id.list_item_layout);
         }
     }
 
