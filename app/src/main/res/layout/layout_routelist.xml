@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/Driver_Route_Layout">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardBackgroundColor="#fbebff"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="false"
+        app:contentPadding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="120dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/RouteUpdateRV1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#8C278B"
+                android:text="UPDATE"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/RouteDeleteRV1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#8C278B"
+                android:text="DELETE"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/RouteToRV1"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="60dp"
+            android:text="To"
+            android:textAlignment="center"
+            android:textColor="#8C278B"
+            android:textSize="10pt" />
+
+        <TextView
+            android:id="@+id/RouteNoRV1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@android:color/darker_gray"
+            android:text="route No"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/RouteSTimeRV1"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="90dp"
+            android:text="Start Time"
+            android:textAlignment="center"
+            android:textColor="#8C278B"
+            android:textSize="10pt" />
+
+        <TextView
+            android:id="@+id/RouteFromRV1"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="60dp"
+            android:text="From"
+            android:textAlignment="center"
+            android:textColor="#8C278B"
+            android:textSize="10pt" />
+
+        <TextView
+            android:id="@+id/RouteETimeRV1"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="90dp"
+            android:text="End Time"
+            android:textAlignment="center"
+            android:textColor="#8C278B"
+            android:textSize="10pt" />
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

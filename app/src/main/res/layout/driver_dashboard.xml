@@ -8,125 +8,117 @@
     android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
     tools:context=".driver_dashboard">
 
-
-    <ImageView
-        android:id="@+id/payments"
-        android:layout_width="142dp"
-        android:layout_height="132dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:contentDescription="@string/payments"
-        android:onClick="payments"
-        app:layout_constraintBottom_toTopOf="@+id/textView12"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.555"
-        app:layout_constraintStart_toEndOf="@+id/my_route"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.96"
-        app:srcCompat="@drawable/pay" />
-
-    <ImageView
-        android:id="@+id/my_route"
-        android:layout_width="146dp"
-        android:layout_height="146dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginBottom="12dp"
-        android:contentDescription="@string/my_routes"
-        android:onClick="my_routes"
-        app:layout_constraintBottom_toTopOf="@+id/textView9"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/route" />
-
-    <ImageView
-        android:id="@+id/booking"
-        android:layout_width="146dp"
-        android:layout_height="146dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="36dp"
-        android:layout_marginBottom="8dp"
-        android:contentDescription="@string/booking"
-        android:onClick="booking"
-        app:layout_constraintBottom_toTopOf="@+id/textView11"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/booking" />
-
-    <ImageView
-        android:id="@+id/add_route"
-        android:layout_width="146dp"
-        android:layout_height="146dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:contentDescription="@string/add_route"
-        android:onClick="add_route"
-        app:layout_constraintBottom_toTopOf="@+id/textView10"
-        app:layout_constraintEnd_toStartOf="@+id/booking"
-        app:layout_constraintHorizontal_bias="0.477"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/add" />
-
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="29dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="112dp"
         android:text="@string/my_routes"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.276"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.202"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.876" />
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="26dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="116dp"
-        android:text="@string/payments"
+        android:text="Profile"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.83"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.738"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.518" />
 
     <TextView
         android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_marginEnd="76dp"
+        android:layout_width="103dp"
+        android:layout_height="35dp"
         android:text="@string/booking"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="20sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView10"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.801"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.876" />
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_height="27dp"
         android:text="@string/add_route"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/my_route"
-        app:layout_constraintEnd_toStartOf="@+id/textView11"
-        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.205"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.886" />
+        app:layout_constraintVertical_bias="0.517" />
+
+    <ImageButton
+        android:id="@+id/add_route"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:background="@color/white"
+        android:contentDescription="TODO"
+        android:onClick="add_route"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        app:srcCompat="@drawable/add" />
+
+    <ImageButton
+        android:id="@+id/booking"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:background="@color/white"
+        android:onClick="booking"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.832"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.725"
+        app:srcCompat="@drawable/booking" />
+
+    <ImageButton
+        android:id="@+id/my_route"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:background="@color/white"
+        android:onClick="my_routes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.725"
+        app:srcCompat="@drawable/route" />
+
+    <ImageButton
+        android:id="@+id/profile"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:background="@color/white"
+        android:onClick="profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.832"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.298"
+        app:srcCompat="@drawable/profile" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

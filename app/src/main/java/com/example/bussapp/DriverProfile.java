@@ -2,8 +2,8 @@ package com.example.bussapp;
 
 public class DriverProfile {
     private String BusNo;
-    private String DriverName;
-    private String ContactNo;
+    private String Name;
+    private int ConNo;
     private String DriverLicensNo;
     private String Email;
     private String SeatsCount;
@@ -12,13 +12,13 @@ public class DriverProfile {
 
     }
 
-    public DriverProfile(String busNo, String driverName, String contactNo, String driverLicensNo, String email,String seatsCount) {
+    public DriverProfile(String busNo, String name, int conNo, String driverLicensNo, String email,String seatsCount) {
         BusNo = busNo;
-        DriverName = driverName;
-        ContactNo = contactNo;
+        Name = name;
+        ConNo = conNo;
         DriverLicensNo = driverLicensNo;
         Email = email;
-        this.SeatsCount =seatsCount;
+        SeatsCount =seatsCount;
     }
 
     public String getSeatsCount() {
@@ -38,19 +38,19 @@ public class DriverProfile {
     }
 
     public String getDriverName() {
-        return DriverName;
+        return Name;
     }
 
-    public void setDriverName(String driverName) {
-        DriverName = driverName;
+    public void setDriverName(String name) {
+        Name = name;
     }
 
-    public String getContactNo() {
-        return ContactNo;
+    public int getContactNo() {
+        return ConNo;
     }
 
-    public void setContactNo(String contactNo) {
-        ContactNo = contactNo;
+    public void setContactNo(int conNo) {
+        ConNo = conNo;
     }
 
     public String getDriverLicensNo() {

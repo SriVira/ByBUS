@@ -6,8 +6,6 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.bussapp.R;
-
 public class Add_route extends AppCompatActivity {
 
     @Override

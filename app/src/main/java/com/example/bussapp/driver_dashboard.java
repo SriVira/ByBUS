@@ -42,4 +42,9 @@ public class driver_dashboard extends AppCompatActivity {
         Intent my_routes = new Intent(driver_dashboard.this, My_route.class);
         startActivity(my_routes);
     }
+    public void profile(View v) {
+        Intent profile = new Intent(driver_dashboard.this, DriverDetails.class);
+
+        startActivity(profile);
+    }
 }
