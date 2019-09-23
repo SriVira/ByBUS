@@ -194,6 +194,7 @@ public class user_login extends AppCompatActivity implements View.OnClickListene
         else if(Uname.equals("driver") && Upass.equals("driver")){
 
             Intent driver = new Intent(user_login.this,driver_dashboard.class);
+            driver.putExtra("userName",UserName.getText());
             startActivity(driver);
             Toast.makeText(this,"Login Successfully As Driver",Toast.LENGTH_SHORT).show();
 
